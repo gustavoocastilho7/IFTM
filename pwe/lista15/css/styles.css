@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: black;
+}
+
+
+header h1,
+header p {
+    text-align: right;
+    padding: 15px;
+
+}
+
+header h1 {
+    background-color: black;
+    color: white;
+    font-family: "Oswald", sans-serif;
+}
+
+header p {
+    background-color: rgb(104, 104, 104);
+    color: white;
+    font-weight: bold;
+}
+
+/* Menu: Inicio */
+header nav ul {
+    list-style: none;
+    text-align: center;
+    background-color: rgb(104, 104, 195);
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav a:link,
+header nav a:visited {
+    display: inline-block;
+    padding: 40px 25px 10px 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-image: url('../img/logos_gray_transparent_70x70.png');
+    background-repeat: no-repeat;
+    background-position: center -15px;
+
+}
+
+header nav a:hover {
+    color: yellow;
+    background-image: url('../img/logos_resized_70x70.png');
+}
+
+/* Menu:Fim */
+
+section {
+    width: 1200px;
+    background-color: white;
+    margin: auto;
+    padding: 30px;
+}
+
+section h2 {
+    transition: all 0.5s;
+}
+
+section h2:hover {
+    letter-spacing: 5px;
+}
+
+section ul {
+    margin-left: 50px;
+}
+ 
+section ul li a:link, section ul li a:visited {
+    color: blue;
+}
+
+section img {
+    width: 500px;
+    display: block;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+section p {
+    margin:25px 0px;
+}
+
+section p a {
+    color: blue;
+}
+
+footer {
+    background-color: gray;
+    text-align: center;
+    padding: 30px;
+}
+footer p {
+    color: white;
+}
+footer a {
+    color: rgb(150, 227, 250);
+}
