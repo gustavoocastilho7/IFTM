@@ -108,4 +108,7 @@ footer {
   .curiosidades {
     flex-direction: column;
   }
+  .galeria {
+    flex-direction: column;
+  }
 }
