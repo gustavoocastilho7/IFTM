@@ -1,0 +1,114 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: white;
+  color: rgb(65, 65, 65);
+}
+
+header {
+  background-color: rgb(0, 69, 97);
+  color: white;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 14px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: rgb(125, 173, 173);
+  transform: scale(1.05);
+}
+
+main {
+  padding: 32px;
+}
+
+.intro {
+  background: rgb(231, 207, 142);
+  padding: 24px;
+  border-radius: 10px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.curiosidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.curiosidades > div {
+  flex: 1 1 45%;
+  background: rgb(149, 243, 212);
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.galeria {
+  background: orange;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.galeria .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+footer {
+  background-color: rgb(0, 69, 97);
+  color: white;
+  text-align: center;
+  padding: 16px;
+  margin-top: 32px;
+}
+
+/* Celular */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  .curiosidades {
+    flex-direction: column;
+  }
+
+  .galeria {
+    flex-direction: column;
+  }
+
+}
