@@ -1,0 +1,22 @@
+table {
+    margin: 20px auto;
+    border-spacing: 10px;
+}
+
+#titulo-principal {
+    font-size: 24px;
+    color: blue;
+    font-family: Verdana;
+    text-align: center;
+}
+
+.dica-senha {
+    color: red;
+    font-family: verdana;
+    font-size: 10px;
+}
+
+.botoes {
+    text-align: center;
+
+}
