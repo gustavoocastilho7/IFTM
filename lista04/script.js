@@ -20,7 +20,7 @@ for (i=1; i<=2; i++) {
     indicesSorteados[i-1] = indCand
     document.getElementById(`candSorteado${i}`).innerHTML = candidatos[indCand].nome;
     document.getElementById(`partCandidato${i}`).innerHTML = candidatos[indCand].partido;
-    document.getElementById(`candFoto${i}`).src = `img/${candidatos[indCand].img}`;
+    document.getElementById(`candFoto${i}`).src = `../img/${candidatos[indCand].img}`;
     document.getElementById(`votosCand${i}`).innerHTML = vetVotos[i-1].toFixed(1);
 }
 
@@ -56,4 +56,5 @@ gerarSorteio();
 
 // document.getElementById("candSorteado2").innerHTML = candidatos[sorteado2].nome;
 // document.getElementById("partCandidato2").innerHTML = candidatos[sorteado2].partido;
+
 // document.getElementById("candFoto2").src = `img/${candidatos[sorteado2].img}`;
