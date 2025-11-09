@@ -10,9 +10,9 @@ window.addEventListener("DOMContentLoaded", function (){
     if(document.getElementById("btnOpcoes").selectedIndex == 0)
         txtAnalise = infoLocalStorage
     else
-        txtAnalise = document.getElementById("txtInfo").ariaValueMax;
+        txtAnalise = document.getElementById("txtInfo").value;
 
-    vetPalavras = txtAnalise.split(" ");
+    vetPalavras = txtAnalise ? txtAnalise.split(" ") : [];
 
     document.getElementById("txtPalavras").innerHTML = vetPalavras.length;
 
@@ -23,7 +23,7 @@ window.addEventListener("DOMContentLoaded", function (){
         if(vetPalavras[i].charAt(0).toUpperCase() == letra.toUpperCase())
             palavraM.push(vetPalavras[i]);
     }
-    document.getElementById("txtPalavraM").value = palavraM.join(' ');
+    document.getElementById("txtPalavrasM").value = palavraM.join(' ');
 
     document.getElementById("primeiraPalavra").value = vetPalavras[0];
     document.getElementById("segundaPalavra").value = vetPalavras[1];
@@ -35,5 +35,6 @@ window.addEventListener("DOMContentLoaded", function (){
 
     })
    
+
 
 })
