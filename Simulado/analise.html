@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>1) Texto informado pelo usuário na página anterior</p>
+    <p id="txtIndex"></p>
+
+    <p>2) Você gostaria de analisar a informação disponibilizada pelo usuário na página anterior?</p>
+
+    <form>
+        <select id="btnOpcoes">
+            <option>Sim</option>
+            <option>Não</option>
+        </select>
+
+        <p>OBS: Se você responder "não" na pergunta anterior (2), por favor informe um novo texto na caixa abaixo: </p>
+
+        <input type="text" id="txtInfo" class="txtBox">
+        <br>
+        <input type="button" value="Analisar" id="btnAnalisar">
+
+        <hr>
+
+        <p>3) Quantidade de palavras contidas no texto: <span id="txtPalavras"></span></p>
+
+        <label>4) Palavras iniciadas com a letra M:</label>
+        <input type="text" id=txtPalavrasM" disabled>
+        <br><br>
+
+        <label>5) Primeira palavra do texto:</label>
+        <input type="text" id=primeiraPalavra" disabled>
+        <br><br>
+
+        <label>6) Segunda palavra do texto:</label>
+        <input type="text" id=segundaPalavra" disabled>
+        <br><br>
+
+        <label>7) Última palavra do texto:</label>
+        <input type="text" id=ultimaPalavra" disabled>
+
+        <br>
+
+        <input type="button" value="Abrir a página do papai noel" id="btnPapai">
+    </form>
+
+    <script src="js/analise.js"> </script>
+</body>
+</html>
