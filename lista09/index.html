@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>a)Data de nascimento:</label>
+        <input type="text" id="txtNascimento" placeholder="__/__/____">
+        <input type="button" value="Validar" id="btnNascimento">
+
+        <br><label>b)CPF:</label>
+        <input type="text" id="txtCPF" onKeyPress="inserirMascara('txtCPF','xxx.xxx.xxx-xx')" placeholder="___.___.___-__">
+        <input type="button" value="Validar" id="btnCPF">
+
+        <br><label>c)Número de matrícula de um aluno:</label>
+        <input type="text" id="txtMatricula" placeholder="IFTM-xxx/xxx-yy">
+        <input type="button" value="Validar" id="btnMatricula">
+
+        <br><label>d)Código de uma disciplina do IFTM:</label>
+        <input type="text" id="txtDisciplina1" onKeyPress="inserirMascara('txtDisciplina1','xx-xx.xxx-xxxx')" placeholder="MT-xx.xxx-IFTM">
+        <input type="button" value="Validar" id="btnDisciplina1">
+
+        <br><label>e)Código de uma disciplina do IFTM: (versão 2)</label>
+        <input type="text" id="txtDisciplina2" onKeyPress="inserirMascara('txtDisciplina2','xx-xx.xxx-xxxx')" placeholder="MT-xx.xxx-IFTM">
+        <input type="button" value="Validar" id="btnDisciplina2">
+
+        <br><label>f)Código de uma disciplina do IFTM: (versão 3)</label>
+        <input type="text" id="txtDisciplina3" placeholder="MT-xx.xxx-IFTM">
+        <input type="button" value="Validar" id="btnDisciplina3">
+        
+        <br><label>g)Código de uma disciplina do IFTM: (versão 4)</label>
+        <input type="text" id="txtDisciplina4" placeholder="MT-xx.xxx-IFTM Y">
+        <input type="button" value="Validar" id="btnDisciplina4">
+        
+        <br><label>h)Nome de campus do IFTM:</label>
+        <input type="text" id="txtNome" placeholder="">
+        <input type="button" value="Validar" id="btnNome">
+
+        <br><label>i)Telefone:</label>
+        <input type="text" id="txtTelefone1" onKeyPress="inserirMascara('txtTelefone1','+yy(xx)xxxxx-xxxx')" placeholder="+yy(xx)xxxxx-xxxx">
+        <input type="button" value="Validar" id="btnTelefone1">
+
+        <br><label>j)Telefone:(versão 2)</label>
+        <input type="text" id="txtTelefone2" placeholder="(xx)xxxxx-xxxx ou (xxx)xxxxx-xxxx">
+        <input type="button" value="Validar" id="btnTelefone2">
+
+        <br><label>k)Altura de uma pessoa:</label>
+        <input type="text" id="txtAltura" placeholder="">
+        <input type="button" value="Validar" id="btnAltura">
+
+        <br><label>l)Faturamento anual de uma empresa:</label>
+        <input type="text" id="txtFatura" placeholder="R$0,00 até R$999.999.999.999,99">
+        <input type="button" value="Validar" id="btnFatura">
+
+        <br><label>m)Cronômetro:</label>
+        <input type="text" id="txtCronometro" onKeyPress="inserirMascara('txtCronometro','xx:xx:xx:xx')" placeholder="HH:MM:SS:CC">
+        <input type="button" value="Validar" id="btnCronometro">
+
+        <br><label>m)Senha:</label>
+        <input type="text" id="txtSenha" placeholder="">
+        <input type="button" value="Validar" id="btnSenha">
+
+
+
+      </form>
+    <script src="js/script.js"></script>
+    <script src="js/jMaskWiFi.js"></script>
+</body>
+</html>
