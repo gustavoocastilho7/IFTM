@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória</title>
+    <link rel="stylesheet" href="css/jogo.css">
+</head>
+<body>
+    <div class="container-principal">
+        <h1>Jogo da Memória</h1>
+
+        <div class="painel-controles">
+            <div class="info-usuario">
+              <p class="nomeJogador">Olá! <span id="nomeJogador">!</span>
+            </div>
+
+            <div class="selecao-dificuldade">
+                <label for="nivel-dificuldade">Nível:</label>
+                <select id="nivel-dificuldade">
+                    <option value="facil">Fácil (12 Cartas)</option>
+                    <option value="medio">Médio (16 Cartas)</option>
+                    <option value="dificil">Difícil (24 Cartas)</option>
+                </select>
+            </div>
+
+            <div class="placar-e-controles">
+                <div class="cronometro">
+                    Tempo: <span id="display-tempo">01:30</span>
+                </div>
+                
+                <div class="botoes-acao">
+                    <button id="btn-iniciar" onclick="iniciarJogo()">Recomeçar (Play)</button>
+                    <button id="btn-pausar" onclick="pausarJogo()" >Pausar</button>
+                    <button id="btn-parar" onclick="pararJogo()" >Parar Jogo</button>
+                </div>
+            </div>
+        </div>
+
+        <section class="tabuleiro-memoria" id="tabuleiro-memoria"></section>
+
+        <p class="mensagem-status" id="mensagem-status">Selecione o nível e clique em "Recomeçar"!</p>
+    </div>
+
+    <script src="js/jogo.js"></script>
+    
+</body>
+</html>

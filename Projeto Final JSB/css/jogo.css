@@ -1,0 +1,227 @@
+
+:root {
+    --cor-fundo: rgb(103, 9, 255);
+    --cor-primaria: rgb(0, 0, 0);
+    --cor-secundaria: rgb(0, 0, 0);
+    --cor-card-fundo: rgb(103, 9, 255);
+    --cor-card-borda: black;
+    --cor-card-sombra: rgba(0, 0, 0, .3);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('../img/background-roxo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    margin: 0;
+}
+
+.nomeJogador{
+    font-weight: bold;
+}
+
+.container-principal {
+    width: 90%;
+    max-width: 850px;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: var(--cor-primaria);
+    margin-bottom: 20px;
+}
+
+.painel-controles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.info-usuario,
+.selecao-dificuldade,
+.placar-e-controles {
+    margin: 5px;
+}
+
+#display-nome {
+    font-weight: bold;
+    color: var(--cor-secundaria);
+}
+
+.cronometro {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin-right: 15px;
+}
+
+.botoes-acao button {
+    padding: 8px 15px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: var(--cor-secundaria);
+    color: white;
+    transition: background-color 0.2s;
+}
+
+.botoes-acao button:hover:not(:disabled) {
+    background-color: var(--cor-primaria);
+}
+
+.botoes-acao button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.tabuleiro-memoria {
+    margin: 20px auto;
+    display: grid;
+    gap: 10px;
+    position: relative; 
+    overflow: hidden;
+    aspect-ratio: 4 / 3; 
+}
+
+.tabuleiro-memoria.facil {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    max-width: 800px;
+    width: 100%;
+}
+
+.tabuleiro-memoria.medio {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    aspect-ratio: 1 / 1;
+    max-width: 800px;
+    width: 100%;
+}
+
+.tabuleiro-memoria.dificil {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    max-width: 900px;
+    width: 100%;
+}
+
+.carta-memoria {
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    box-shadow: 1px 1px 1px var(--cor-card-sombra);
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.carta-memoria:active {
+    transform: scale(0.97);
+    transition: transform 0.2s;
+}
+
+.carta-memoria.virada {
+    transform: rotateY(180deg);
+}
+
+.frente-carta,
+.verso-carta {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    background: var(--cor-card-borda); 
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.frente-carta {
+    transform: rotateY(180deg); 
+    background: white; 
+}
+
+.frente-carta img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    display: block;
+}
+
+.verso-carta {
+    background: var(--cor-card-fundo);
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.mensagem-status {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: var(--cor-primaria);
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container-principal {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .painel-controles {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .info-usuario,
+    .selecao-dificuldade {
+        margin-bottom: 10px;
+    }
+
+    .placar-e-controles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botoes-acao {
+        margin-top: 10px;
+    }
+
+    .tabuleiro-memoria {
+        gap: 5px; 
+    }
+
+    .tabuleiro-memoria.facil,
+    .tabuleiro-memoria.medio,
+    .tabuleiro-memoria.dificil {
+        height: auto; 
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 5px; 
+    }
+}

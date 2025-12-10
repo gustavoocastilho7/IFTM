@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    background-image: url('../img/background-roxo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.jogo h1 {
+    text-align: right;
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+}
+
+#cabeca,
+#exibir {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    color: yellow;
+    margin: 3em 0;
+    font-size: 2em;
+    box-shadow: 1em 3em 3em rgba(128, 128, 128, 0.5);
+    overflow: auto;
+    margin-bottom: 50px;
+}
+
+#tempo,
+#nivel {
+    font-size: 30px;
+}
+
+#numero,
+#tempo {
+    font-family: 'Black Ops One', 'Pacifico', sans-serif;
+}
+
+#iniciarBtn,
+#pausaBtn,
+#pararBtn {
+    background-color: purple;
+    color: white;
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#numero {
+
+    padding-top: 60px;
+    margin-top: 400px;
+    font-size: 20em;
+    text-align: center;
+    margin: 0 auto;
+    width: 600px;
+    height: 400px;
+    margin-bottom: 50px;
+}
+
+form {
+    width: auto;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="button"],
+form input[type="submit"],
+form input[type="txtNick"] {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="button"] {
+    background-color: #4e225fe1;
+    /* Cor ajustada para melhor visibilidade */
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+form input[type="button"]:hover {
+    background-color: #9554e99d;
+    /* Cor ajustada para efeito hover */
+}
+
+.cadastro a:link,
+.cadastro a:visited {
+    color: rgb(122, 122, 247);
+    font-size: 16px;
+    text-decoration: none;
+}
+
+h1 {
+    color: white;
+    font-size: 33px;
+    padding: 30px;
+}
+
+@media screen and (max-width: 900px) {
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        width: 100%;
+        background-image: url('../raposa.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        margin: 0;
+    }
+
+    .jogo h1 {
+        text-align: right;
+        font-size: 30px;
+        padding: 5px;
+    }
+
+    #cabeca,
+    #exibir {
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 1em 0;
+
+    }
+
+    #tempo,
+    #nivel {
+        font-size: 20px;
+    }
+
+    #iniciarBtn,
+    #pausaBtn,
+    #pararBtn {
+        display: block;
+        margin: auto;
+        width: 95%;
+        margin: 3px;
+        padding: 10px 10px;
+    }
+
+    #numero {
+        font-size: 8em;
+        width: 70%;
+        height: 200px;
+    }
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        padding: 20px;
+    }
+
+    form {
+        width: 100%;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    form input[type="text"],
+    form input[type="password"],
+    form input[type="button"],
+    form input[type="submit"],
+    form input[type="txtNick"] {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    form input[type="button"] {
+        background-color: #4e225fe1;
+        color: white;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+    }
+
+    form input[type="button"]:hover {
+        background-color: #9554e99d;
+    }
+
+    .cadastro a:link,
+    .cadastro a:visited {
+        color: rgb(122, 122, 247);
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    h1 {
+        color: white;
+        font-size: 33px;
+        padding: 30px;
+    }
+
+
+}
