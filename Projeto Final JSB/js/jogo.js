@@ -34,18 +34,18 @@ if (usuarios && usuarios.length > 0 && usuarios[0] && usuarios[0].nickname) {
 } 
 
 const nomesImagens = [
-    '../img/carta1.png',
-    '../img/carta2.png',
-    '../img/carta3.png',
-    '../img/carta4.png',
-    '../img/carta5.png',
-    '../img/carta6.png',
-    '../img/carta7.png',
-    '../img/carta8.png',
-    '../img/carta9.png',
-    '../img/carta10.png',
-    '../img/carta11.png',
-    '../img/carta12.png'
+    'img/carta1.png', 
+    'img/carta2.png',
+    'img/carta3.png',
+    'img/carta4.png',
+    'img/carta5.png',
+    'img/carta6.png',
+    'img/carta7.png',
+    'img/carta8.png',
+    'img/carta9.png',
+    'img/carta10.png',
+    'img/carta11.png',
+    'img/carta12.png'
 ];
 
 function iniciarJogo() {
@@ -228,4 +228,5 @@ atualizarDisplayTempo();
 btnIniciar.addEventListener('click', iniciarJogo);
 btnPausar.addEventListener('click', pausarJogo);
 btnParar.addEventListener('click', pararJogo);
+
 selectDificuldade.addEventListener('change', pararJogo);
