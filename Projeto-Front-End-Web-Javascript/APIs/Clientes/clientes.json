@@ -1,0 +1,27 @@
+[
+  {
+    "nome": "Ana Silva",
+    "depoimento": "O produto superou minhas expectativas! A bateria dura muito tempo e a qualidade do som é impecável.",
+    "rating": 5
+  },
+  {
+    "nome": "Carlos Roberto",
+    "depoimento": "Muito bom, mas achei o manual um pouco confuso de entender no início. Tirando isso, funciona perfeitamente.",
+    "rating": 4
+  },
+  {
+    "nome": "Mariana Costa",
+    "depoimento": "Decepcionante. O produto parou de funcionar na primeira semana de uso. Já solicitei a troca.",
+    "rating": 1
+  },
+  {
+    "nome": "Fernando Souza",
+    "depoimento": "Pelo preço cobrado, entrega exatamente o que promete. Um bom custo-benefício para o dia a dia.",
+    "rating": 3
+  },
+  {
+    "nome": "Juliana Mendes",
+    "depoimento": "Incrível! Comprei para dar de presente e a pessoa amou. O design é lindo e muito bem acabado.",
+    "rating": 5
+  }
+]
