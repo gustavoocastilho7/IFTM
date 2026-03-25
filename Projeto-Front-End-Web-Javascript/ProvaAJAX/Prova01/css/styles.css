@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    padding: auto;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    position: absolute;
+    top: 50%;
+    border: 1px solid blue;
+    padding: 15px;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(42, 106, 245);
+}
+
+.button {
+    color: green;
+    font-weight: bold;
+    background-color: yellow;
+    border-color: aliceblue;   
+}
+
+.button:hover{
+    background-color: rgb(42, 106, 245);
+    color: black;
+}
