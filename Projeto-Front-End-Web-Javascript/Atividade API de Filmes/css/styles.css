@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  padding: 30px;
+  width: 100%;
+}
+
+header h1 {
+  color: purple;
+  display: flex;
+  align-items: center; 
+  gap: 15px; 
+}
+
+header h1::after {
+  content: "";
+  height: 4px; 
+  background-color: purple; 
+  flex-grow: 1; 
+  border-radius: 5px;
+  
+}
+
+main {
+  padding: 100px 30px 30px;
+}
+
+#movies {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+
+.movie {
+  position: relative;
+  transition: transform 0.3s;
+  cursor: pointer;
+  overflow: visible;
+  z-index: 1; 
+}
+
+.movie:hover {
+  transform: scale(1.1);
+  z-index: 10; 
+}
+
+.movie img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.movie details .info-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  padding: 15px;
+  border-radius: 5px;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+  font-size: 13px;  
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease;
+}
+
+.movie details[open] .info-dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+
+summary {
+  position: relative;
+  z-index: 60;
+  cursor: pointer;
+  color: purple;
+  font-weight: bold;
+  list-style: none;
+  padding: 5px 20px;
+  display: inline-block;
+}
+
+
+
